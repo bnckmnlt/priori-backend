@@ -1,6 +1,9 @@
 const allowedOrigins = [
   "https://priorisystems.com",
   "https://priori.com.ph",
+  "https://www.priori.com.ph",
+  "http://priori.com.ph",
+  "http://www.priori.com.ph",
   "https://priori-website-5ufqk111s-bnckmnlt.vercel.app/",
   "https://priori-backend.onrender.com",
   "http://localhost:5173",

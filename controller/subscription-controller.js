@@ -134,6 +134,7 @@ const getSubscriptionPlan = async (req, res) => {
   const db = getDB();
 
   try {
+    seedSubscriptionPlan();
     const result = await db
       .collection("subscriptions")
       .findOne({ _id: createSubscriptionPlansDocument._id });
