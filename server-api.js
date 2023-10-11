@@ -41,12 +41,6 @@ app.use("/api/transaction", transactionRoute);
 app.use("/api/user", userRoute);
 app.use("/api/paypal", paypalRoute);
 
-app.all("*", (err, res) => {
-  return res
-    .status(err.status || 500)
-    .json({ message: err.message || `Something went wrong` });
-});
-
 const PORT = process.env.PORT;
 
 connectDB()
